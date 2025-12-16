@@ -6,13 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India -Watch Shows On</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
     <!-- Banner Section -->
     <section class="w-[100%] h-[100vh] bg-[url('http://127.0.0.1:5500/Project/Netflix%20Clone/assets/banner.jpg')] bg-center bg-cover[rgba(0,0,0,0.5)]
         <div class=" w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)] ">
-            <header class=" max-w-[1170px] "></header>
+            <header class=" max-w-[1170px] mx-auto ">
+                <div class=" grid sm: grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center ">
+                    <figure>
+                        <img src="assets/pngegg.png " alt=" " class="w-[148px] ">
+                    </figure>
+                    <div class=" flex justify-end gap-[10px] ">
+                        <div class="relative ">
+                            <i class="fa-solid fa-language text-white absolute top-[10px] ml-2 "></i>
+                            <select name=" " id=" " class="bg-[black] text-white border-[1px] border-[white] sm:p-[5px_25px] rounded-[5px] ">
+                                <option value=" " selected >English</option>
+                                <option value=" ">Hindi</option>
+                            </select>
+                        </div>
+                        <button class="bg-[red] rounded-[5px] text-white px-[10px] ">
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="max-w-[1117px] mx-auto sm:py-[150px] py-[50px] text-center text-white ">
+                <h1 class=" sm:text-[50px] text-[35px] text-white font-bold ">Unlimited movies, <br>shows, and more</h1>
+                <h3 class=" text-[19px] py-[12px] font-bold ">Starts at ₹149. Cancel at any time.</h3>
+                <p class=" text-[20px] font-bold ">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <div class="max-w-[700px] mx-auto sm:px-[10px] px-[40px] mt-[30px] ">
+                    <form action=" " class="grid gap-[20px] sm:grid-cols-[70%_auto] sm:grid-cols-1 mx-auto mt-[30px] ">
+                        <input type="text " class=" border-[1px] border-[#ccc] bg-[transparent] h-[50px] pl-[20px] " placeholder="Email Address ">
+                        <button class="bg-[red] rounded-[5px] text-white px-[10px] py-[15px] ">Get Started</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </section>
 </body>
