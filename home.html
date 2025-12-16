@@ -114,7 +114,7 @@
 
                     <div class="py-[30px] ">
                         <div class=" bg-[#2d2d2d] mb-[15px] ">
-                            <div class=" p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
+                            <div class=" p-[20px] text-white sm:text-[30px] text-[20px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
                                 <h3>What is Netflix?</h3>
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
@@ -126,7 +126,7 @@
                             </p>
                         </div>
                         <div class=" bg-[#2d2d2d] mb-[15px] ">
-                            <div class=" p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
+                            <div class=" p-[20px] text-white sm:text-[30px] text-[20px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
                                 <h3>What is Netflix?</h3>
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
@@ -138,7 +138,7 @@
                             </p>
                         </div>
                         <div class=" bg-[#2d2d2d] mb-[15px] ">
-                            <div class=" p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
+                            <div class=" p-[20px] text-white sm:text-[30px] text-[20px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
                                 <h3>What is Netflix?</h3>
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
@@ -150,7 +150,7 @@
                             </p>
                         </div>
                         <div class=" bg-[#2d2d2d] mb-[15px] ">
-                            <div class=" p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
+                            <div class=" p-[20px] text-white sm:text-[30px] text-[20px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
                                 <h3>What is Netflix?</h3>
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
@@ -162,7 +162,7 @@
                             </p>
                         </div>
                         <div class=" bg-[#2d2d2d] mb-[15px] ">
-                            <div class=" p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
+                            <div class=" p-[20px] text-white sm:text-[30px] text-[20px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
                                 <h3>What is Netflix?</h3>
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
@@ -174,7 +174,7 @@
                             </p>
                         </div>
                         <div class=" bg-[#2d2d2d] mb-[15px] ">
-                            <div class=" p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
+                            <div class=" p-[20px] text-white sm:text-[30px] text-[20px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer freqAskQ ">
                                 <h3>What is Netflix?</h3>
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
@@ -190,29 +190,41 @@
                 </div>
             </section>
 
+            <div class="bg-black text-white">
+            <p class=" text-[20px] font-bold text-center">Ready to watch? Enter your email to create or restart your membership..</p>
+
+                <div class="max-w-[700px] mx-auto sm:px-[10px] px-[40px] mt-[30px] ">
+                    <form action=" " class="grid gap-[20px] sm:grid-cols-[70%_auto] sm:grid-cols-1 mx-auto mt-[30px] ">
+                        <input type="text " class=" border-[1px] border-[#ccc] bg-[transparent] h-[50px] pl-[20px] " placeholder="Email Address ">
+                        <button class="bg-[red] rounded-[5px] text-white px-[10px] py-[7px] hover:bg-[rgb(193,17,25)] duration-300 text-[25px] ">Get Started ></button>
+                    </form>
+                </div>
+            </div>
+
+
         </div>
     </section>
-    <script> 
-        let Questions = document.querySelectorAll(".freqAskQ")
-        Questions.forEach((v,index) => {
-            v.addEventListener('click',()=>{
-                console.log(index)
+</body>
+<script>
+    let Questions = document.querySelectorAll(".freqAskQ")
+    Questions.forEach((v,index) => {
+        v.addEventListener('click',()=>{
+            console.log(index)
 
 
-                v.nextElementSibling.classList.toggle("h-[auto]")
-                v.nextElementSibling.classList.toggle("scale-y-100")
-                v.nextElementSibling.classList.toggle("p-[20px]")
-                v.children[1].classList.toggle(" rotate-45")
+            v.nextElementSibling.classList.toggle("h-[auto]")
+            v.nextElementSibling.classList.toggle("scale-y-100")
+            v.nextElementSibling.classList.toggle("p-[20px]")
+            v.children[1].classList.toggle(" rotate-45")
 
-                Questions.foreach((el,i) => {
-                    if(i!=index){
-                        el.nextElementSibling.classList.remove("h-[auto] "," scale-y- 100 "," p-[20px]")
-                        el.children[1].classList.remove("rotate-45")
-                    }
-                })
+            Questions.foreach((el,i) => {
+                if(i!=index){
+                    el.nextElementSibling.classList.remove("h-[auto] "," scale-y- 100 "," p-[20px]")
+                    el.children[1].classList.remove("rotate-45")
+                }
             })
         })
-    </script>
-</body>
+    })
+</script>
 
 </html>
