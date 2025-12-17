@@ -15,22 +15,22 @@
 
 <body>
     <!-- Banner Section -->
-    <section class="w-[100%] h-[100vh] bg-[url('./assets/banner.jpg')] bg-center bg-cover-[rgba(0,0,0.1,0.5)]
+    <section class="w-[100%] h-[100vh] py-[35px] bg-[url('./assets/banner.jpg')] bg-center bg-cover-[rgba(0,0,0.1,0.5)]
         <div class=" w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)] ">
             <header class=" max-w-[1170px] mx-auto ">
-                <div class=" grid sm: grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center ">
+                <div class=" grid sm:grid-cols-2 grid-cols-[30%_auto] px-[5px] py-[5px] items-center ">
                     <figure>
-                        <img src="./assets/logo.png" alt=" " class="w-[148px] ">
+                        <img src="./assets/logo.png" alt=" " class="w-[200px] ">
                     </figure>
-                    <div class=" flex justify-end gap-[10px] ">
+                    <div class=" flex justify-end gap-[20px] ">
                         <div class="relative ">
                             <i class="fa-solid fa-language text-white absolute top-[10px] ml-2 "></i>
-                            <select name=" " id=" " class="bg-[black] text-white border-[1px] border-[white] sm:p-[5px_25px] rounded-[5px] ">
+                            <select name=" " id=" " class="bg-[black] text-white border-[1px] border-[white] sm:p-[8px_30px] rounded-[5px] ">
                                 <option value=" " selected >English</option>
                                 <option value=" ">Hindi</option>
                             </select>
                         </div>
-                        <button class="bg-[red] rounded-[5px] text-white px-[10px] hover:bg-[rgb(193,17,25)] duration-300 ">
+                        <button class="bg-[red] rounded-[5px] text-white px-[30px] hover:bg-[rgb(193,17,25)] duration-300 ">
                             Sign In
                         </button>
                     </div>
@@ -58,9 +58,9 @@
                             <h2 class="sm:text-[50px] text-[40px] font-bold ">Enjoy on your TV </h2>
                             <p class="sm:text-[25px] text-[20px] pt-[30px] ">Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</p>
                         </div>
-                        <figure class="relative ">
-                            <video src=" " class="absolute w-[80%] left-[10%] bottom-[20%] z-[1] "></video>
-                            <img src="assets/scrren.png " alt=" " class="relative z-[2] ">
+                        <figure class="relative">
+                            <img src="./assets/scrren2.png " alt=" " class="relative z-[1] h-[300px] mx-auto">
+                            <video src="./assets/scrrenvideo.mp4" autoplay="true" loop="true" class="absolute w-[55%] left-[23%] bottom-[18%] z-[2] h-[90%]"></video>
                         </figure>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                                 <span class="absolute right-[20px] top-[15px] ">+</span>
                             </div>
                             <div class="text-white text-[20px] scale-y-0 h-[0px] origin-top duration-300 ">
-                                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p><br>
                                 <p>
                                 You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
                             </p>
@@ -168,7 +168,7 @@
                             </div>
                             <div class="text-white text-[20px] scale-y-0 h-[0px] origin-top duration-300 ">
                                 <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
-                                <p>
+                                <p><br>
                                 Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
                             </p>
                         </div>
@@ -247,17 +247,15 @@
     let Questions = document.querySelectorAll(".freqAskQ")
     Questions.forEach((v,index) => {
         v.addEventListener('click',()=>{
-            console.log(index)
-
 
             v.nextElementSibling.classList.toggle("h-[auto]")
             v.nextElementSibling.classList.toggle("scale-y-100")
             v.nextElementSibling.classList.toggle("p-[20px]")
-            v.children[1].classList.toggle(" rotate-45")
+            v.children[1].classList.toggle("rotate-45")
 
-            Questions.foreach((el,i) => {
+            Questions.forEach((el,i) => {
                 if(i!=index){
-                    el.nextElementSibling.classList.remove("h-[auto] "," scale-y- 100 "," p-[20px]")
+                    el.nextElementSibling.classList.remove("h-[auto]","scale-y-100","p-[20px]")
                     el.children[1].classList.remove("rotate-45")
                 }
             })
